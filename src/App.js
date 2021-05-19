@@ -26,7 +26,7 @@ export default function App() {
     clearErrors();
     fire
       .auth()
-      .signInWithEmailAndPassword(email, password)
+      .signInWithEmailAndPassword(email,password)
       .catch((error) => {
         switch (error.code) {
           case "auth/invalid-email":
